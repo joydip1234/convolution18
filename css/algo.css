@@ -1,0 +1,154 @@
+/* algomaniac  */
+#algomaniac_title {
+    width: 100%;
+    font-family: RobotoMono, sans-serif;
+    display: inline-block;
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+    padding: 10px;
+}
+
+
+#algo_main_div {
+    display: table;
+    width: 100%;
+    height: calc(100vh - 90px);
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background:url('../img/new/bg_algo.png') no-repeat fixed;
+    background-size: contain;
+    z-index: -10;
+}
+
+
+
+.algomaniac_divs{
+    display: table-cell;
+    width: 50%;
+    float: left;
+    height: 100%;
+    box-sizing: border-box;
+    z-index: 0;
+    min-height: 100vh;
+}
+#code_write{
+    background-color: #23527c;
+    background-color: #23527cAF;
+}
+#code_execute{
+    background-color: #772953;
+        background-color: #772953AF;
+}
+.algo_title_bar{
+    height: 30px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 7px;
+    display: block;
+    background: linear-gradient(#0a0a0a90,#1F1F1FB5);
+    color: white;
+    font-size: 1em;
+    font-weight: 400;
+    font-family: PixelFont,sans-serif;
+}
+#algo_code{
+    width: 90%;
+    font-family: RobotoMono, sans-serif;
+    padding:5px;
+}
+
+@keyframes typeIt {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+#algo_code > span{
+    animation: typeIt 0.3s ease-in;
+    padding: 3px;
+    height:1.5em;
+    display: inline-block;
+}
+.tab_in_code{
+    width: 3em;
+    height: 1.1em;
+    display: inline-block;
+}
+.line_number{
+    background-color: rgba(0,0,0,0.1);
+}
+.cd1{
+    color:#89acff;
+}
+.cd2{
+    color: #fff772;
+}
+#show_result{
+    font-family: RobotoMono,sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    padding: 10px;
+}
+.cd3{
+    cursor: default;
+    display: inline-block;
+    padding: 5px;
+
+    color: #abefd6;
+}
+.cd4{
+    color:white;
+}
+.cd4 > p {
+    opacity: 0.9;
+    padding: 10px;
+    line-height: 1.2em;
+    text-overflow: clip;
+    color: #ffe577;
+}
+.cppKeyWord{
+    color: #deffed !important;
+}
+
+#algo_buttons_wrapper {
+    width: 100%;
+    display: block;
+    padding: 15px;
+    box-sizing: border-box;
+    clear: both;
+    background-color: #8b59c9;
+    height: 70px;
+}
+
+.algo_buttons_class {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white !important;
+    background-color: #2a2e39;
+    box-shadow: 0 4px 3px #333;
+    font-family: PixelFont, sans-serif;
+    padding: 10px 25px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 3px;
+    width: 40%;
+    margin: 5%;
+    display: inline-block;
+    float: left;
+    font-weight: 400;
+    font-size: 1.2em !important;
+}
+
+
+@media only screen and (max-width: 700px){
+
+    #code_execute{
+        display: block !important;
+        width: 100% !important;
+        height: auto !important;
+        box-sizing: border-box;
+
+    }
+    #code_write{
+        display: none !important;
+    }
+}
