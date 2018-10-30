@@ -32,11 +32,6 @@ if (isset($_COOKIE['convo_mail'])) {
             setcookie('convo_token', '', time() + (86400 * 30), "/");
 
         }
-    } else {
-        //if (isset($_COOKIE['not_confirmed']) && $_COOKIE['not_confirmed'] === '1')
-        //    $await_confirm = 1;
-        //else 
-        //setcookie('convo_mail', '', time() + (86400 * 30), "/");
     }
 
     if ($name != '') {
